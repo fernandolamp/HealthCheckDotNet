@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckApi", "HealthCheckAPI\HealthCheckApi.csproj", "{33E2B321-6958-4C62-99AE-D05EE2B59DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckUI", "HealthCheckUI\HealthCheckUI.csproj", "{28337E3E-BF2D-4012-9234-A7AD7B871F56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33E2B321-6958-4C62-99AE-D05EE2B59DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E2B321-6958-4C62-99AE-D05EE2B59DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E2B321-6958-4C62-99AE-D05EE2B59DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E2B321-6958-4C62-99AE-D05EE2B59DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28337E3E-BF2D-4012-9234-A7AD7B871F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28337E3E-BF2D-4012-9234-A7AD7B871F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28337E3E-BF2D-4012-9234-A7AD7B871F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28337E3E-BF2D-4012-9234-A7AD7B871F56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33C687BD-DD03-46F7-A1F9-D0DACBAB714B}
+	EndGlobalSection
+EndGlobal
