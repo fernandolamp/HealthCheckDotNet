@@ -12,19 +12,13 @@ builder.Services.AddRouting();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddHttpClient<IHealthCheck, AccountHealthCheck>();
-builder.Services.AddHealthChecks().AddUrlGroup(new Uri("https://ambev.com.br"),"Ambev",null,null,TimeSpan.FromSeconds(3)).AddCheck("Ambev Manual",new AccountHealthCheck());
+builder.Services.AddHttpClient<IHealthCheck, GoogleHealthCheck>();
+var uri = builder.Configuration.GetSection("UriCheck").Value;
+builder.Services.AddHealthChecks().AddUrlGroup(new Uri(uri), "Google Check", null, null, TimeSpan.FromSeconds(3))
+    .AddCheck("Google Manual", new GoogleHealthCheck());
 
 var app = builder.Build();
 
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
 app.UseHealthChecks("/hc", new HealthCheckOptions
 {
